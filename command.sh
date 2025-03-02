@@ -16,7 +16,6 @@ docker run -d --name database \
 
 docker run -d --name frontend \
   -p 8080:80 -p 80:80 \
-  -v openSIS:/var/www/html \
   --network opensis_network \
   --network-alias opensis \
   --depends-on database \
