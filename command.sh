@@ -28,3 +28,5 @@ docker volume create openSIS
 
 
 docker build -t your-frontend-image .
+
+https://mxulises.medium.com/simple-prometheus-setup-on-docker-compose-f702d5f9857
