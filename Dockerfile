@@ -40,11 +40,11 @@ RUN git clone https://github.com/OS4ED/openSIS-Classic.git  -b ver7.4 openSIS
 RUN chown -R www-data:www-data  openSIS
 
 # Copy startup script and grant execution rights
-COPY start.sh /start.sh
-RUN chmod +x /start.sh
+COPY start.sh .
+RUN chmod +x start.sh
 
 # Expose port 80
 EXPOSE 80
 
 # Start services
-CMD ["/start.sh"]
+CMD ["./start.sh"]
